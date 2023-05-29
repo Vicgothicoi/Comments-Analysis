@@ -2,7 +2,7 @@ from hanlp_restful import HanLPClient
 
 def main(text):
     # auth不填则匿名，zh中文，mul多语种
-    HanLP = HanLPClient('https://www.hanlp.com/api', auth='MjQ2MUBiYnMuaGFubHAuY29tOkkycFFMdjlGQzlLam84VVk=', language='zh')
+    HanLP = HanLPClient('https://www.hanlp.com/api', auth=None, language='zh')
     return HanLP.text_classification(text, model='news_zh')
 
 if __name__ == '__main__':
