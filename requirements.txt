@@ -1,0 +1,10 @@
+gradio==3.16.2
+opencv-python==4.7.0.72
+numpy==1.24.3
+jieba==0.42.1
+hanlp-restful==0.0.23
+pillow==9.2.0
+wordcloud==1.9.2
+requests==2.31.0
+snownlp==0.12.3
+pandas==1.4.3
