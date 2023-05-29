@@ -1,4 +1,4 @@
-不需要下载其它文件可以直接运行
+不需要下载其它文件可以直接运行，部分参考自https://github.com/jamosnet/JD-comments-sentiment-analysis
 
 jd_comment.py实现数据爬取、转换、生成词云
 
