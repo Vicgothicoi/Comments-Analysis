@@ -109,7 +109,7 @@ def data_virtualization():
     plt.title(u'商品评论情感分析结果-条形图')#, fontproperties=font)
     plt.savefig(IMG_PATH)
     return cv2.imread(IMG_PATH)
-    #plt.show()
+    plt.show()
 '''
 def word_cloud_show():
     #将商品评论转为高频词汇的词云
@@ -125,9 +125,8 @@ def main():
 
      print('数据可视化中...')
      img = data_virtualization()  # 数据可视化
-     return img
-
      print('python程序运行结束。')
+     return img
 
 if __name__ == '__main__':
     img = main()
