@@ -78,8 +78,8 @@ def main(wsd_word,sent):
 
     sort_array = sorted(mean_tf_idf, key=lambda x: x[1], reverse=True)
     true_meaning = sort_array[0][0].split('_')[1]
-    return true_meaning
     print('\n经过词义消岐，%s在该句子中的意思为： %s .' % (wsd_word, true_meaning))
+    return true_meaning
 
 if __name__ == '__main__':
     true_meaning = main('苹果','水果')
