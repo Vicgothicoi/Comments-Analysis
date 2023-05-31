@@ -22,18 +22,18 @@ def OnlineRes(key):
 
 with gr.Blocks() as demo:
     gr.Markdown("请选择功能.")
-    gr.Markdown("请选择功能.")
     with gr.Tab("本地商品评价查询"):
         input1_1 = gr.Textbox(placeholder="请输入查询词:")
         input1_2 = gr.Textbox(placeholder="请输入消歧项:")
-        output1_1 = gr.Image()
-        output1_2 = gr.Image()
+        with gr.Row():#水平展示
+            output1_1 = gr.Image()
+            output1_2 = gr.Image()
         button1 = gr.Button("查询")
     with gr.Tab("浏览器商品评价查询"):
-        #with gr.Row():#水平展示
         input2 = gr.Textbox(placeholder="请输入网址:")
-        output2_1 = gr.Image()
-        output2_2 = gr.Image()
+        with gr.Row():
+            output2_1 = gr.Image()
+            output2_2 = gr.Image()
         button2 = gr.Button("查询")
     with gr.Tab("语义消歧"):
         input3_1 = gr.Textbox(placeholder="请输入查询词:")
