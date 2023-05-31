@@ -121,7 +121,7 @@ def word_cloud_show():
 def main():
      processed_data(PROCESSED)#数据清洗
 
-     test(COMMENT_CSV_PATH, RESULT_PATH)
+     test(PROCESSED, RESULT_PATH)
 
      print('数据可视化中...')
      img = data_virtualization()  # 数据可视化
